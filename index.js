@@ -2,6 +2,7 @@ var bolt = require('firebase-bolt');
 var through = require('through2');
 var readfile = require('fs-readfile-promise');
 var path = require('path');
+var PluginError = require('plugin-error')
 //var fileIO =
 // Consts
 const PLUGIN_NAME = 'gulp-firebase-bolt';
@@ -172,7 +173,7 @@ module.exports = function() {
             }
             Promise.all(subPromises).then(function(){
               resolve();
-            }).carch(function(ex){
+            }).catch(function(ex){
               this.emit('error in parsed files');
             });
 
