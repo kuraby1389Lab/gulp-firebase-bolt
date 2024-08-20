@@ -24,7 +24,7 @@
   "homepage": "https://github.com/brewsoftware/gulp-firebase-bolt#readme",
   "devDependencies": {
     "firebase-bolt-validation": "0.0.2",
-    "gulp": "^3.9.1"
+    "gulp": "^5.0.0"
   },
   "dependencies": {
     "firebase": "^2.4.2",
